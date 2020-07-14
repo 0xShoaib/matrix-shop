@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #282828;
+}
+
+.CardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Cart Styles */
+.CartWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+
+  margin: 0 auto;
+}
+
+.EmptyCartWrapper {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.EmptyCartWrapper h1 {
+  margin-bottom: 30px;
+}
+
+.ListItemsWraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ListWarrperTitile {
+  width: 100%;
+  height: 30px;
+  letter-spacing: 1.4px;
+  font-weight: 100;
+}
+
+.CheckOutCard {
+  margin: 20px;
+  margin-top: 50px;
+  min-width: 250px;
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+.CheckOutCard h2 {
+  letter-spacing: 1.4px;
+}
+
+.CheckOutCard p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-top: 1px solid #b4b4b4;
+  border-bottom: 1px solid #b4b4b4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CheckOutCard span {
+  font-size: 17px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+.CheckOutCard a,
+.EmptyCartWrapper a,
+.BuyNowBtn {
+  padding: 10px 15px;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-color: #282828;
+}
+
+.CheckOutCard a:hover,
+.EmptyCartWrapper a:hover,
+.BuyNowBtn:hover {
+  box-shadow: 0px 0px 8px 0.2px rgba(0, 0, 0, 0.5);
+}
+
+.Note {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Note p {
+  margin: 5px 0;
+  padding: 0;
+  border: none;
+  color: #dc3545;
+}
+.Note p b {
+  margin-left: 6px;
+  color: #282828;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 768px) {
+  .CartWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .CheckOutCard {
+    margin-top: 0;
+  }
+}
+
+/* Signup Form Styles */
+.SignupWrapper,
+.LoginWrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+.SignupWrapper h2,
+.LoginWrapper h2 {
+  margin: 0 0 40px;
+  padding: 0;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.SignupWrapper input,
+.LoginWrapper input,
+.SignupWrapper .SignupBtn,
+.LoginWrapper .LoginBtn {
+  padding: 10px 0;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #b4b4b4;
+  letter-spacing: 1.4px;
+}
+
+.FormError,
+.ServerError {
+  margin-top: -25px;
+  color: #dc3545;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.ServerError {
+  text-align: center;
+  color: #dc3545;
+  padding: 8px;
+  background-color: rgba(220, 53, 69, 0.2);
+  border: 1px solid #dc3545;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.SignupWrapper .SignupBtn,
+.LoginWrapper .LoginBtn {
+  border-bottom: none;
+  cursor: pointer;
+  background-color: #282828;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  margin-top: 0px;
+}
+
+.SignupWrapper form div,
+.LoginWrapper form div {
+  position: relative;
+}
+
+.SignupWrapper form div label,
+.LoginWrapper form div label {
+  position: absolute;
+  top: -12px;
+  font-size: 14px;
+  left: 0;
+  pointer-events: none;
+  color: #b4b4b4;
+  transition: 0.5s;
+  letter-spacing: 1.2px;
+}
+
+.QuestionOnForm {
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  border-top: 1px solid #b4b4b4;
+}
+
+.QuestionOnForm a {
+  color: #dc3545;
+}
+
+.SpinnerBtn {
+  background: rgba(0, 0, 0, 0.7) !important;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 423px) {
+  .SignupWrapper,
+  .LoginWrapper {
+    margin: 0 20px;
+    padding: 40px 20px;
+  }
+}

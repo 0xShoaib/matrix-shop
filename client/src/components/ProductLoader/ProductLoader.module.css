@@ -1,0 +1,111 @@
+.ProductLoader {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ProductLoaderInfo {
+  width: 50%;
+  height: 100%;
+  padding: 1%;
+  margin-left: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.ProductLoaderImage,
+.ProductLoaderTitle,
+.ProductLoaderPrice,
+.ProductLoaderButton {
+  background-color: #dddbdd;
+  overflow: hidden;
+}
+
+.ProductLoaderImage {
+  width: 334px;
+  height: 400px;
+}
+
+.ProductLoaderTitle,
+.ProductLoaderPrice {
+  width: 50%;
+  height: 45px;
+
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.ProductLoaderPrice {
+  width: 20%;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.FirstPara,
+.SecondPara,
+.ThirdPara,
+.FourthPara,
+.FifthPara {
+  width: 70%;
+  height: 10px;
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #dddbdd;
+  overflow: hidden;
+}
+
+.FirstPara {
+  width: 58%;
+}
+.SecondPara {
+  width: 65%;
+}
+.ThirdPara {
+  width: 60%;
+}
+.FourthPara {
+  width: 55%;
+}
+.FifthPara {
+  width: 63%;
+}
+
+.ProductLoaderButton {
+  width: 70%;
+  height: 45px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(100%);
+  }
+}
+
+.ProductLoaderSkeleton {
+  height: 100%;
+  transform: translate(100%);
+
+  animation: leftToRight 1s linear infinite;
+}
+
+.ProductLoaderIndicator {
+  width: 10px;
+  height: 100%;
+
+  transform: rotate(20deg);
+
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px 15px rgb(228, 228, 228);
+}

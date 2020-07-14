@@ -1,0 +1,22 @@
+.Header {
+  width: 100%;
+  min-height: 90px;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: #282828;
+  color: #fff;
+
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 540px) {
+  .Header {
+    justify-content: center;
+  }
+}

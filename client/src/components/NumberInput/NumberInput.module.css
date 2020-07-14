@@ -1,0 +1,80 @@
+.NumberInput {
+  position: relative;
+
+  width: 100px;
+  height: 30px;
+
+  /* border-radius: 40px; */
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+/* .NumberInput:hover {
+  width: 110px;
+  border: 2px solid rgba(40, 40, 40, 1);
+} */
+
+.NextWarpper,
+.PrevWarpper {
+  width: 25px;
+  height: 100%;
+
+  display: block;
+  cursor: pointer;
+  background-color: rgba(180, 180, 180, 0.5);
+
+  position: absolute;
+  top: 0;
+}
+
+.NextWarpper:hover .Next,
+.PrevWarpper:hover .Prev {
+  border-color: #282828;
+}
+
+.NextWarpper {
+  right: 0;
+}
+
+.PrevWarpper {
+  left: 0;
+}
+
+.NextWarpper .Next,
+.PrevWarpper .Prev {
+  position: absolute;
+  top: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  border-top: 1.5px solid #282828b6;
+  border-left: 1.5px solid #282828b6;
+}
+
+.NextWarpper .Next {
+  right: 8px;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.PrevWarpper .Prev {
+  left: 8px;
+  transform: translateY(-50%) rotate(315deg);
+}
+
+.Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  width: 40px;
+  margin: 0 auto;
+}
+
+.Box span {
+  font-size: 18px;
+  font-weight: 300;
+  user-select: none;
+}

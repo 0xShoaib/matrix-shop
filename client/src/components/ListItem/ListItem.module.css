@@ -1,0 +1,112 @@
+.ListItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  width: 500px;
+  margin: 20px 0;
+  padding: 10px;
+
+  position: relative;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 2px 0.1px rgba(0, 0, 0, 0.2);
+}
+
+.ListProductInfoWrapper {
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  user-select: none;
+}
+
+.ListTotalWarpper {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #b4b4b442;
+  margin-top: 10px;
+  padding: 0 15px;
+  padding-top: 5px;
+}
+
+.ThumbnailWrapper {
+  width: 100px;
+  height: 100%;
+}
+
+.ThumbnailWrapper img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.InfoWrapper {
+  margin-left: 20px;
+}
+
+.ListTitle {
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+
+.ListPrice,
+.ListQuantity {
+  color: #282828a6;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1.4px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ListTotalPrice {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ListTotalPrice b {
+  letter-spacing: 1.4px;
+}
+
+.DeleteIcon {
+  cursor: pointer;
+  color: #b4b4b4;
+
+  transition: all 0.2s ease-in-out;
+  font-size: 22px;
+}
+
+.DeleteIcon:hover {
+  color: #282828;
+}
+
+@media screen and (max-width: 500px) {
+  .ListItem {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .ListItem {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .ListItem {
+    width: 310px;
+  }
+}
