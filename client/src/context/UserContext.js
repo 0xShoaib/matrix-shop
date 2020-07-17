@@ -7,7 +7,7 @@ const UserContextProvider = (props) => {
   const [user, dispatch] = useReducer(UserReducer, [], () => {
     let localData = localStorage.getItem("user");
 
-    return localData ? JSON.parse(localData) : [];
+    return localData ? JSON.parse(localData) : null;
   });
 
   useEffect(() => {

@@ -37,15 +37,15 @@ export default function Login() {
         if (result.error) {
           console.log("Error: ", result.error);
           setServerError(result.error);
+        } else {
+          console.log(result);
+
+          localStorage.setItem("token", result.token);
+          localStorage.setItem("user", JSON.stringify(result.user));
+
+          dispatch({ type: "USER", payload: result.user });
+          history.push("/");
         }
-
-        console.log(result);
-
-        localStorage.setItem("token", result.token);
-        localStorage.setItem("user", JSON.stringify(result.user));
-
-        dispatch({ type: "USER", payload: result.user });
-        history.push("/");
       });
   };
   return (

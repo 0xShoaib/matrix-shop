@@ -24,14 +24,14 @@ export default function Menu() {
       <Link to="/" className={classes.Link}>
         Home
       </Link>
-      {user ? (
-        <p className={classes.Link} onClick={onLogoutClickHandler}>
-          Logout
-        </p>
-      ) : (
+      {user === [] || !user ? (
         <Link to="/login" className={classes.Link}>
           Login
         </Link>
+      ) : (
+        <p className={classes.Link} onClick={onLogoutClickHandler}>
+          Logout
+        </p>
       )}
       <Link to="/cart">
         <div className={classes.Cart}>
